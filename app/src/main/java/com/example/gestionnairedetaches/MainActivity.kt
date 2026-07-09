@@ -39,5 +39,22 @@ fun GestionnaireDeTache() {
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
-    )
+    ) {
+
+        Image(
+            painter = painterResource(id = R.drawable.ic_task_completed),
+            contentDescription = "Tâches terminées"
+        )
+
+        Text(
+            text = "All tasks completed",
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(top = 24.dp, bottom = 8.dp)
+        )
+
+        Text(
+            text = "Nice work!",
+            fontSize = 16.sp
+        )
+    }
 }
